@@ -7,7 +7,7 @@ const userController = {
       .then((user) => res.json(user))
       .catch((err) => res.status(500).json(err));
   },
-  // Get a users
+  // Get a user
   getSingleUser(req, res) {
     Users.findOne({ _id: req.params.userId })
       .select('-__v')
@@ -20,7 +20,7 @@ const userController = {
       )
       .catch((err) => res.status(500).json(err));
   },
-  // Create a users
+  // Create a user
   createUser(req, res) {
     Users.create(req.body)
       .then((users) => res.json(users))
@@ -29,7 +29,7 @@ const userController = {
         return res.status(500).json(err);
       });
   },
-  // Update a users
+  // Update a user
   updateUser(req, res) {
     Users.findOneAndUpdate(
       { _id: req.params.userId },
@@ -43,7 +43,7 @@ const userController = {
       )
       .catch((err) => res.status(500).json(err));
   },
-  // Delete a users
+  // Delete a user
   deleteUser(req, res) {
     Users.findOneAndDelete({ _id: req.params.userId })
       .then((users) =>
@@ -54,7 +54,7 @@ const userController = {
       .then(() => res.json({ message: 'User has been deleted!' }))
       .catch((err) => res.status(500).json(err));
   },
-   // Create a friends--Need more work
+   // Create a friend
   addFriend(req, res) {
       Users.findOneAndUpdate(
         { _id: req.params.userId },
@@ -67,7 +67,7 @@ const userController = {
         return res.status(500).json(err);
       });
   },
-  // Delete a users
+  // Delete a friend
   removeFriend(req, res) {
     Users.findOneAndUpdate(
       { _id: req.params.userId },

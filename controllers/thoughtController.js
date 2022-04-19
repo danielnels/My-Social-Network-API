@@ -64,7 +64,7 @@ module.exports = {
       .then(() => res.json({ message: 'Thoughts was deleted!' }))
       .catch((err) => { console.log(err); res.status(500).json(err)});
   },
-   // Create a thoughts
+   // Create a Reaction
   addReaction(req, res) {
     Thoughts.findOneAndUpdate(
       { _id: req.params.thoughtId },
@@ -78,7 +78,7 @@ module.exports = {
       )
       .catch((err) =>{console.log(err);res.status(500).json(err)});
   },
-  // Delete a thoughts
+  // Delete a Reaction
   deleteReaction(req, res){
     Thoughts.findOneAndUpdate(
       { _id: req.params.thoughtId },
