@@ -16,7 +16,7 @@ const reactionsSchema = new Schema(
     createdAt: {
       type: Date,  
       default: Date.now,
-      get: (timestamp) => moment(timestamp).format('MMM Do, YYYY [at] hh:mm a'),
+      get: (timestamp) => moment(timestamp).format(' Do MMM , YYYY [at] hh:mm a'),
     }
   },
   { toJSON: {getters: true,}}
@@ -34,7 +34,7 @@ const thoughtsSchema = new Schema(
     createdAt: {
       type: Date,  
       default: Date.now,
-      get: timestamp => moment(timestamp).format('MMM Do, YYYY [at] hh:mm a'),
+      get: timestamp => moment(timestamp).format(' Do MMM, YYYY [at] hh:mm a'),
     },
     username: {
       type: String,
