@@ -20,7 +20,7 @@ module.exports = {
       )
       .catch((err) => res.status(500).json(err));
   },
-  // Create a thoughts
+  // Create a thought
   createThoughts(req, res) {
     Thoughts.create(
       { thoughtText: req.body.thoughtText, username: req.body.username}
@@ -39,7 +39,7 @@ module.exports = {
     )
     .catch((err) => {console.log(err); res.status(500).json(err)});
   },
-  // Update a thoughts
+  // Update a thought
   updateThought(req, res) {
     Thoughts.findOneAndUpdate(
       { _id: req.params.thoughtId },
@@ -53,7 +53,7 @@ module.exports = {
       )
       .catch((err) => res.status(500).json(err));
   },
-  // Delete a thoughts
+  // Delete a thought
   deleteThought(req, res) {
     Thoughts.findOneAndDelete({ _id: req.params.thoughtId })
       .then((thoughts) =>
