@@ -93,8 +93,8 @@ https://user-images.githubusercontent.com/94213022/164154488-ac07fe2f-947e-4727-
 
 
 ## Deployed Application Links
-https://github.com/danielnels/My-Social-Network-API.git
-
+Git Hub:https://github.com/danielnels/My-Social-Network-API.git
+Demo Video:https://github.com/danielnels/My-Social-Network-API/blob/main/Assets/Social%20API.mp4
 ## Questions
   Please e-mail me if you have any questions about this App
   danieln@newground.net.au 
