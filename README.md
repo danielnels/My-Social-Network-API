@@ -60,7 +60,7 @@ To use this application:
 Download and install node.js.
 
 * To automatically install dependencies, run "npm i" 
-
+* To seed the database, run "npm start seed"
 
 Run the app
 * Watch the demo 
