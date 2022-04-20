@@ -79,7 +79,7 @@ Run the app
 
 #### * Package.json
 #### * express
-#### * Mongo
+#### * MongoDB
 #### * Mongoose
 #### * Moment
 
