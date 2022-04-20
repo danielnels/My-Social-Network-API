@@ -4,7 +4,7 @@
 ![EXPRESS.JS](https://img.shields.io/badge/Express.js-20232A?style=for-the-badge&logo=express&logoColor=61DAFB)
 ![MONGODB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)
 ## Description
-an API for a social network web application where users can share their thoughts, react to friends’ thoughts, and create a friend list.
+An API for a social network web application where users can share their thoughts, react to friends’ thoughts, and create a friend list.
 
  ## Table Of Contents
   * [Description](#description)
@@ -94,7 +94,9 @@ https://user-images.githubusercontent.com/94213022/164154488-ac07fe2f-947e-4727-
 
 ## Deployed Application Links
 Git Hub:https://github.com/danielnels/My-Social-Network-API.git
+
 Demo Video:https://github.com/danielnels/My-Social-Network-API/blob/main/Assets/Social%20API.mp4
+
 ## Questions
   Please e-mail me if you have any questions about this App
   danieln@newground.net.au 
