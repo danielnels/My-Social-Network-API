@@ -34,7 +34,7 @@ module.exports = {
       })
     .then((thoughts) =>
       !thoughts
-        ? res.status(404).json({ message: 'Updated' })
+        ? res.status(200).json({ message: 'Updated' })
         : res.json(thoughts)
     )
     .catch((err) => {console.log(err); res.status(500).json(err)});
